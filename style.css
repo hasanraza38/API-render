@@ -9,14 +9,81 @@ html,body{
     width: 100%;
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #EEE3AB;
+    background-color: #252525;
 }
 
 body nav{
-    background-color:#f7ecf5;
+    background-color:#ffc926;
+}
+#s-bar{
+    display: flex;
+    padding: 0px 8vw;
+
+}
+#s-bar-button{
+    border: 1px solid black;
+
+    color: black;
+}
+#s-bar-button:hover{
+    background-color: #fff;
+}
+
+#nav-logo{
+    font-weight: 900;
+    font-size: 2vw;
+    cursor: pointer;
 }
 
 .card{
     padding: 10px;
-    box-shadow: 1px 0px 10px rgb(148, 142, 142);
+    box-shadow: 1px 0px 10px #eec64d;
+    transition: all ease 0.6s;
+
+}
+
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card button{
+    background-color: transparent;
+    border: 1.5px solid black;
+    box-shadow: 1px 0px 10px #f1da92;
+    color: black;
+    font-weight: 550;
+    transition: all ease 0.2s;
+}
+.card button:hover{
+    background-color: #ffc516;
+    color: black;
+    box-shadow: 1px 0px 10px rgb(153, 153, 153);
+
+}
+
+#filters{
+    background-color:#f8df94;
+    padding: 10px;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    /* justify-content:  */
+}
+#filters button{
+ 
+    background-color: transparent;
+    border: none;
+    font-size: 900;
+    /* font-weight: ; */
+    border-radius: 5px;
+    padding: 3px 7px;
+    transition: all ease-in-out 0.2s;
+    /* color: #f7ecf5; */
+}
+
+#filters button:hover{
+    box-shadow: 1px 0px 10px rgb(141, 139, 139);
+    transform: scale(1.1);
 }
